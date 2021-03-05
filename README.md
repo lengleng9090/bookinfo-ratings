@@ -12,4 +12,4 @@ docker run -d --name ratings -p 8080:8080 --link mongodb:mongodb \
   -e SERVICE_VERSION=v2 -e 'MONGO_DB_URL=mongodb://mongodb:27017/ratings' ratings
 ```
 
-* Test with path `/ratings/1`
+* Test with path `/ratings/1` and `/health`
