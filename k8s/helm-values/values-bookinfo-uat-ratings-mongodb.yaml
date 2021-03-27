@@ -4,4 +4,4 @@ auth:
   enabled: false
 persistence:
   enabled: false
-initdbScriptsConfigMap: bookinfo-prd-ratings-mongodb-initdb
+initdbScriptsConfigMap: bookinfo-uat-ratings-mongodb-initdb

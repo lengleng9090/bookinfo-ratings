@@ -1,7 +1,7 @@
 services:
   ratings:
     build: .
-    image: ghcr.io/lengleng9090/bookinfo-ratings:prd
+    image: ghcr.io/lengleng9090/bookinfo-ratings:dev
     ports:
       - "8080:8080"
     environment:
