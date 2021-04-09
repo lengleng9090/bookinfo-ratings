@@ -1,0 +1,11 @@
+apiVersion: v1
+description: Bookinfo Ratings Service Helm Chart
+name: bookinfo-ratings
+version: 1.0.0
+appVersion: 1.0.0
+home: https://bookinfo.dev.opsta.net/student34/ratings
+maintainers:
+  - name: student34
+    email: devop34@mail.kmutt.ac.th
+sources:
+  - https://github.com/lengleng9090/bookinfo-ratings
