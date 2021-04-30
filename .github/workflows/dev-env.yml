@@ -13,13 +13,11 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/lengleng9090/bookinfo_ratings:dev
-      - run: docker build -t ghcr.io/lengleng9090/bookinfo-ratings:dev .
-      - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-      - run: docker push ghcr.io/lengleng9090/bookinfo-ratings:dev
+          tags: ghcr.io/lengleng9090/bookinfo-ratings:dev
+
