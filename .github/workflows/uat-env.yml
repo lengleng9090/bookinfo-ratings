@@ -51,4 +51,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Test health service
-        run: curl http://bookinfo.uat.opsta.net/student34/ratings/health | grep "Ratings is working"
+        run: curl http://bookinfo.uat.opsta.net/student34/ratings/health | grep "Ratings is healthy"
